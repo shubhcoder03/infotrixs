@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Finlandica', sans-serif;
+    background-color: #ebebeb;
+}
+
+.taskbar{
+    display: flex;
+    height: 60px;
+    background-color: #1f1f1f;
+    align-items: center;
+}
+
+.taskbar h3{
+    position: relative;
+    left:10%;
+    color:white;
+}
+.taskbar img{
+    width: 100px;
+}
+.searchbox{
+    position: relative;
+    left:30%;
+}
+.searchbox input{
+    width:200%;
+    height: 40px;
+    text-align: center;
+    border-radius: 6px;
+    border-color: #1f1f1f;
+    margin-bottom: 15px;
+}
+
+#search{
+    background-color: white;
+    position: relative;
+    top:38px;
+    left:10px;
+    cursor: pointer;
+}
+
+.display{
+    display: flex;
+    background-color: #ffffff;
+    border: 10px;
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 250px;
+    width: 80%;
+    align-items: center;
+}
+
+.temp{
+    font-size: 6rem;
+    position:absolute;
+    left:180px;
+    margin-top: 40px;
+}
+.city{
+    font-size: 3rem;
+    position:absolute;
+    left: 180px;
+    top:150px;
+}
+
+.opt{
+    font-size: larger;
+    line-height: 80px;
+    position: relative;
+    left:40%;
+}
+.temp-logo{
+    width:20%;
+    margin-left: 50%;
+}
+
+@media only screen and (max-width:1130px){
+    .taskbar h3{
+        display: none;
+    }
+    .searchbox{
+        position: relative;
+        left:10%;
+        width: 30%;
+    }
+    .display{
+        width:80%;
+        height: 200px;
+    }
+    .temp{
+        font-size: 3rem;
+        position:absolute;
+        left:100px;
+        margin-top: 40px;
+    }
+    .city{
+        font-size: 1.5rem;
+        position:absolute;
+        left: 110px;
+        top:150px;
+    }
+    .opt{
+        font-size: medium;
+        line-height: 60px;
+        position: relative;
+        left:35%;
+    }
+
+}
+
+
+
+@media only screen and (max-width:590px){
+    .taskbar h3{
+        display: none;
+    }
+    .taskbar img{
+        display: none;
+    }
+    .searchbox{
+        position: relative;
+        left:10%;
+        width: 40%;
+    }
+    .display{
+        width:80%;
+        height: 200px;
+    }
+    .temp{
+        font-size: 3rem;
+        position:absolute;
+        left:120px;
+        bottom:20px;
+    }
+    .city{
+        font-size: 1.5rem;
+        position:absolute;
+        left: 125px;
+        top:90px;
+    }
+    .opt{
+        display: none;
+    }
+    .temp-logo{
+        width:20%;
+        position: absolute;
+        right:130px;
+    }
+
+}
